@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="TestCases.Change_Password">
+        <methods>
+          <include name="login_config"/>
+          <include name="logout"/>
+          <include name="isSkip"/>
+          <include name="PasswordChange"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- TestCases.Change_Password -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
