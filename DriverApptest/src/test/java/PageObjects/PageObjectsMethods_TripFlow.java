@@ -113,6 +113,12 @@ public class PageObjectsMethods_TripFlow extends TestBase
 		driver.findElementByName(OR.getProperty("Ok")).click();
 	}
 
+	public void done()
+	{
+		//for xiomi
+		driver.findElementByName(OR.getProperty("Done")).click();
+	}
+	
 	public void Add()
 	{
 		//Click on ADD

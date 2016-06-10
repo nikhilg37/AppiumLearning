@@ -30,12 +30,12 @@ public class In_TripExpenseCheck extends PageObjectsMethods_TripFlow
 			throw new SkipException("Skipping the test case as Run mode is set to NO");
 		}	
 	}
-	
+
 	@Test
 	public void start_intrip_end()
 	{	
 		PageObjectsMethods_TripFlow trips = new PageObjectsMethods_TripFlow();
-		
+
 		//Start Trip flow
 		trips.tripID();
 		trips.AcceptTrips();
@@ -43,7 +43,7 @@ public class In_TripExpenseCheck extends PageObjectsMethods_TripFlow
 		trips.ClickYes();
 		trips.StartOdo();
 		trips.SubmitOdo();
-		
+
 		//Intrip Flow
 		trips.ClickInTrip();
 		//1st in trip money
@@ -51,20 +51,21 @@ public class In_TripExpenseCheck extends PageObjectsMethods_TripFlow
 		trips.TripReasonClick();;
 		trips.TripReasonsSelect();
 		trips.date();
-		trips.OK();
+		// this is for moto G trips.OK();
+		trips.done();
 		trips.Add();
 		//2nd in trip money
 		trips.TripAmt();
 		trips.TripReasonClick();;
 		trips.TripReasonsSelect();
 		trips.date();
-		trips.OK();
-		trips.Add();
+		// this is for moto G trips.OK();
+		trips.done();
 		//in-trip delete
 		trips.IntripDelete();
 		trips.ClickYes();
 		trips.back();
-		
+
 		//End Trip flow
 		trips.EndTrip();
 		trips.ClickYes();

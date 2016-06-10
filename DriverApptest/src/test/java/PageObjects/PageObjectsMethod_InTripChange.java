@@ -93,8 +93,6 @@ public class PageObjectsMethod_InTripChange extends TestBase {
 		//Total payable fare check
 		String ele = driver.findElementById(OR.getProperty("AmountPayable")).getText();
 		//String ele = driver.findElementById(OR.getProperty("TripRevenue")).getText();
-		
-		System.out.println(ele);
 		//Send full amount
 		driver.findElementById(OR.getProperty("AmountPaid")).sendKeys(ele);
 	}
@@ -108,5 +106,10 @@ public class PageObjectsMethod_InTripChange extends TestBase {
 	{
 		//Click on submit
 		driver.findElementByName(OR.getProperty("SubmitPass")).click();
+	}
+	
+	public void done()
+	{
+		driver.findElementByName(OR.getProperty("Done")).click();
 	}
 }

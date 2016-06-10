@@ -49,7 +49,8 @@ public class In_tripChange extends PageObjectsMethod_InTripChange
 		intrip.TripReasonClick();
 		intrip.TripReasonsSelect();
 		intrip.date();
-		intrip.OK();
+		// this is for moto G trips.OK();
+		intrip.done();
 		intrip.Add();
 		intrip.IntripDelete();
 		intrip.ClickYes();
@@ -57,7 +58,6 @@ public class In_tripChange extends PageObjectsMethod_InTripChange
 
 		//Full payment
 		intrip.received();
-		Thread.sleep(10000);
 		intrip.FullAmount();
 		intrip.HideKeyboard();
 		intrip.submit();

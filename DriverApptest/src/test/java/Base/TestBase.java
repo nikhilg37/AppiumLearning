@@ -41,8 +41,8 @@ public class TestBase {
 		//Set up desired capabilities and pass the Android app-activity and app-package to Appium
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("BROWSER_NAME", "Android");
-		capabilities.setCapability("platformVesion", "5.1"); 
-		capabilities.setCapability("deviceName","TA9330F7VE");
+		capabilities.setCapability("platformVesion", "4.4.4"); 
+		capabilities.setCapability("deviceName","2bcac8af");
 		capabilities.setCapability("platformName","Android");
 
 		//Set up apk destination path
@@ -50,7 +50,7 @@ public class TestBase {
 		capabilities.setCapability("app", file.getAbsolutePath());
 
 		//Connect to appium server
-		driver= new AndroidDriver(new URL("http://192.168.1.128:4723/wd/hub"), capabilities);
+		driver= new AndroidDriver(new URL("http://192.168.1.109:4723/wd/hub"), capabilities);
 
 		//Implicit wait
 		driver.manage().timeouts().implicitlyWait(35L, TimeUnit.SECONDS);
