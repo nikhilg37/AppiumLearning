@@ -2,28 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66845" started-at="2016-06-10T08:14:08Z" finished-at="2016-06-10T08:15:15Z">
+  <suite name="Default suite" duration-ms="222582" started-at="2016-06-13T09:44:02Z" finished-at="2016-06-13T09:47:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66845" started-at="2016-06-10T08:14:08Z" finished-at="2016-06-10T08:15:15Z">
-      <class name="TestCases.In_tripChange">
-        <test-method status="PASS" signature="config()[pri:0, instance:TestCases.In_tripChange@4d1c00d0]" name="config" is-config="true" duration-ms="10813" started-at="2016-06-10T13:43:57Z" finished-at="2016-06-10T13:44:08Z">
+    <test name="Default test" duration-ms="222582" started-at="2016-06-13T09:44:02Z" finished-at="2016-06-13T09:47:44Z">
+      <class name="TestCases.BookingInstationPackage">
+        <test-method status="PASS" signature="config()[pri:0, instance:TestCases.BookingInstationPackage@79079097]" name="config" is-config="true" duration-ms="10704" started-at="2016-06-13T15:13:51Z" finished-at="2016-06-13T15:14:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config -->
-        <test-method status="PASS" signature="login()[pri:0, instance:TestCases.In_tripChange@4d1c00d0]" name="login" is-config="true" duration-ms="20273" started-at="2016-06-10T13:44:08Z" finished-at="2016-06-10T13:44:29Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:TestCases.BookingInstationPackage@79079097]" name="login" is-config="true" duration-ms="14419" started-at="2016-06-13T15:14:02Z" finished-at="2016-06-13T15:14:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="isSkip()[pri:0, instance:TestCases.In_tripChange@4d1c00d0]" name="isSkip" is-config="true" duration-ms="27" started-at="2016-06-10T13:44:29Z" finished-at="2016-06-10T13:44:29Z">
+        <test-method status="PASS" signature="booking()[pri:0, instance:TestCases.BookingInstationPackage@79079097]" name="booking" duration-ms="208125" started-at="2016-06-13T15:14:16Z" finished-at="2016-06-13T15:17:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- isSkip -->
-        <test-method status="PASS" signature="Intrip_FullPay()[pri:0, instance:TestCases.In_tripChange@4d1c00d0]" name="Intrip_FullPay" duration-ms="46520" started-at="2016-06-10T13:44:29Z" finished-at="2016-06-10T13:45:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Intrip_FullPay -->
-      </class> <!-- TestCases.In_tripChange -->
+        </test-method> <!-- booking -->
+      </class> <!-- TestCases.BookingInstationPackage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

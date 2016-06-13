@@ -2,6 +2,8 @@ package TestCases;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -34,14 +36,16 @@ public class BookingInstationPackage extends PageObjectMethods_BookingInstationP
 		bookinstpack.PassengerName();
 		Thread.sleep(5000);
 		bookinstpack.HideKeyboard();
+		//driver.navigate().back();
 		
 		bookinstpack.PassengerNumber();
 		Thread.sleep(5000);
-		bookinstpack.HideKeyboard();
+		//bookinstpack.HideKeyboard();
+		driver.navigate().back();
 		
 		bookinstpack.StartLocation();
 		Thread.sleep(10000);
-		bookinstpack.HideKeyboard();
+		driver.navigate().back();
 		
 		bookinstpack.StartDate();
 		Thread.sleep(5000);
@@ -58,15 +62,11 @@ public class BookingInstationPackage extends PageObjectMethods_BookingInstationP
 		bookinstpack.done();
 		
 		bookinstpack.EndLocation();
-		System.out.println("ho");
 		Thread.sleep(10000);
-		System.out.println("ho2");
 		bookinstpack.HideKeyboard();
-		System.out.println("ho3");
 		Thread.sleep(10000);
 		
 		bookinstpack.EndDate();
-		System.out.println("ho4");
 		Thread.sleep(5000);
 		bookinstpack.done();
 		Thread.sleep(5000);
@@ -81,7 +81,37 @@ public class BookingInstationPackage extends PageObjectMethods_BookingInstationP
 		bookinstpack.done();
 		
 		bookinstpack.Round_Trip();
+		Thread.sleep(5000);
 		
+		bookinstpack.fixedPrice();
+		Thread.sleep(5000);
+		
+		bookinstpack.swipingVertical();
+		Thread.sleep(5000);
+		
+		bookinstpack.selectPackageType();
+		Thread.sleep(5000);
+		
+		bookinstpack.dropdownSelectionFixed();
+		Thread.sleep(5000);
+		
+		bookinstpack.bookme();
+		Thread.sleep(5000);
+		
+		bookinstpack.tripIDView();
+		Thread.sleep(5000);
+		
+		bookinstpack.selectVehicle();
+		Thread.sleep(5000);
+		
+		bookinstpack.vehicleDropDown();
+		Thread.sleep(5000);
+		
+		bookinstpack.selectDriver();
+		Thread.sleep(5000);
+		
+		bookinstpack.driverDropDown();
+		Thread.sleep(5000);
 		
 	}
 }
