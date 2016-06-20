@@ -1,0 +1,6 @@
+dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'
+
+shell@falcon_umtsds:/ $ dumpsys window windows | grep -E 'mCurrentFocus|mFocus>
+  mCurrentFocus=Window{7901a8f u0 com.bt.bms/com.bt.bms.activities.MainTabActivity}
+  mFocusedApp=AppWindowToken{2a1b80b5 token=Token{214494ec ActivityRecord{17c70b9f u0 com.bt.bms/.activities.MainTabActivity t40}}}
+shell@falcon_umtsds:/ $
